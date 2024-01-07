@@ -14,9 +14,22 @@ Optionally install and run a virtual environment (such as `pip -m venv StreamBud
 ## Python Dependencies
 See requirements.txt. Typical usage is `pip install -r requirements.txt` (after activating the virtual environment as desired).
 
-## Environment
+## Initial Environment
 Copy example.env to .env for Mac/Linux, or exampleenv.bat to env.bat for Windows.
 Edit .env or env.bat and populate the `<redacted>` values with the keys and so forth.
+
+Leave device code blank for now.
+
+## Obtain Device Code
+
+To get a Twitch Device Code, run the following (in Linux, Windows is similar):
+
+```
+source .env
+curl --location 'https://id.twitch.tv/oauth2/device' --form "client_id=\"${TWITCH_AUTH_CLIENTID}\"" --form "scopes=\"${TWITCH_AUTH_SCOPES}\"" > devicecode.txt
+```
+
+Extract the string after `"device_code":` from `devicecode.txt`. Put that into .env or env.bat.
 
 ## OBS
 CC is pushed into OBS using the built-in OBS websocket. OBS must be at least version 27.

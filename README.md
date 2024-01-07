@@ -3,6 +3,27 @@ This is an artificial intelligent cohost for your stream. It runs on various mac
 
 # Setup
 
+## Veadotube
+https://veado.tube/
+
+Used to animate the avatar given speech.
+
+Will need 1, 2, or 4 images of the cohost avatar.
+
+### Stable Diffusion
+https://github.com/AUTOMATIC1111/stable-diffusion-webui
+or
+https://github.com/comfyanonymous/ComfyUI
+
+Not required, but it is a fun way to generate an initial avatar.
+
+### ebsynth or HyperReenact
+https://ebsynth.com/
+or
+https://github.com/StelaBou/HyperReenact
+
+Not required. Generate the avatar's expressions to match a single image or video of a facial expression or facial expressions (e.g. a picture/video of your own face being expressive).
+
 ## Third Party Account Requirements
 * Twitch App required in the Twitch API console. https://dev.twitch.tv/docs/api/get-started/
 * ChatGPT developer API key. https://platform.openai.com/docs/quickstart/account-setup
@@ -38,7 +59,12 @@ Copy exampleconfig.toml to config.toml.
 
 Check "Enable Websocket server" in `Tools > WebSocket Server Settings`. Click "Show Connect Info". Change the IP, Port, and Password in config.toml to match.
 
-## Code
+## Virtual Cables
+https://vb-audio.com/Cable/index.htm
+
+Needed to connect TTS audio to Veadotube and to OBS.
+
+## Code Changes
 Update `username` and `aliases` in `gptpersonalitytest.py`.
 Update `my_username` in `theprogram.py`.
 

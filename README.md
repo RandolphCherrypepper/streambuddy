@@ -29,6 +29,9 @@ Check "Enable Websocket server" in `Tools > WebSocket Server Settings`. Click "S
 Update `username` and `aliases` in `gptpersonalitytest.py`.
 Update `my_username` in `theprogram.py`.
 
+## Blank files.
+Create empty files called chatlog.txt and speech.json.
+
 # Running
 
 ## Activate the environment

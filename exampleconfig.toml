@@ -1,0 +1,4 @@
+[connection]
+host = "YOUR IP"
+port = PORT
+password = "OBS TELLS YOU THIS PASSWORD"

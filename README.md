@@ -18,6 +18,13 @@ See requirements.txt. Typical usage is `pip install -r requirements.txt` (after 
 Copy example.env to .env for Mac/Linux, or exampleenv.bat to env.bat for Windows.
 Edit .env or env.bat and populate the `<redacted>` values with the keys and so forth.
 
+## OBS
+CC is pushed into OBS using the built-in OBS websocket. OBS must be at least version 27.
+
+Copy exampleconfig.toml to config.toml.
+
+Check "Enable Websocket server" in `Tools > WebSocket Server Settings`. Click "Show Connect Info". Change the IP, Port, and Password in config.toml to match.
+
 ## Code
 Update `username` and `aliases` in `gptpersonalitytest.py`.
 Update `my_username` in `theprogram.py`.

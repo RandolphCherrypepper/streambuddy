@@ -1,0 +1,10 @@
+openai==1.6.1
+requests==2.31.0
+websocket-client==1.7.0
+obsws-python==1.6.2
+numpy==1.26.1
+speechrecognition==3.10.1
+openai-whisper==20231117
+pyaudio==0.2.14
+--find-links https://download.pytorch.org/whl/torch_stable.html
+torch==2.0.1+cu117

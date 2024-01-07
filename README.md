@@ -18,6 +18,10 @@ See requirements.txt. Typical usage is `pip install -r requirements.txt` (after 
 Copy example.env to .env for Mac/Linux, or exampleenv.bat to env.bat for Windows.
 Edit .env or env.bat and populate the `<redacted>` values with the keys and so forth.
 
+## Code
+Update `username` and `aliases` in `gptpersonalitytest.py`.
+Update `my_username` in `theprogram.py`.
+
 # Running
 
 ## Activate the environment
